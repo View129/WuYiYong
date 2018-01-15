@@ -204,7 +204,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="27" />
     <option name="y" value="83" />
     <option name="width" value="1292" />
@@ -515,15 +515,15 @@
       <workItem from="1515669286210" duration="1624000" />
       <workItem from="1515726810845" duration="6020000" />
       <workItem from="1515744937249" duration="5037000" />
-      <workItem from="1515978458956" duration="14819000" />
+      <workItem from="1515978458956" duration="15410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64057000" />
+    <option name="totallyTimeSpent" value="64648000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
