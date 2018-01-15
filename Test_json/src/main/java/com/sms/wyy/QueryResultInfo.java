@@ -11,6 +11,9 @@ public class QueryResultInfo {
     public List<Result> getResult() {
         return result;
     }
+    public void setResult(List<Result> result) {
+        this.result = result;
+    }
 
     public class Result {
 
@@ -24,6 +27,9 @@ public class QueryResultInfo {
                 return "DetailsList [content=" + content + ", hashId=" + hashId + ", unixtime=" + unixtime + ", updatetime=" + updatetime+"]";
             }
 
+        public void setContent(String content) {
+            this.content = content;
+        }
         public String getContent() {
             return content;
         }
