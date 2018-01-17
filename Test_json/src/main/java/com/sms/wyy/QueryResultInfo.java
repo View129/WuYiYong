@@ -3,9 +3,14 @@ package com.sms.wyy;
 import java.util.List;
 
 public class QueryResultInfo {
-    public int error_code;
-    public String reason;
-    public List<Result> result;
+    private int error_code;
+    private String reason;
+    private List<Result> result;
+
+    /*public QueryResultInfo(int error_code, String reason) {
+        this.error_code = error_code;
+        this.reason = reason;
+    }*/
 
 
     public List<Result> getResult() {
@@ -15,14 +20,22 @@ public class QueryResultInfo {
         this.result = result;
     }
 
+
     public class Result {
 
-        public String content;
-        public String hashId;
-        public int unixtime;
-        public String updatetime;
+        private String content;
+        private String hashId;
+        private int unixtime;
+        private String updatetime;
 
-            @Override
+        public Result(String content, String hashId, int unixtime, String updatetime) {
+            this.content = content;
+            this.hashId = hashId;
+            this.unixtime = unixtime;
+            this.updatetime = updatetime;
+        }
+
+        @Override
             public String toString() {
                 return "DetailsList [content=" + content + ", hashId=" + hashId + ", unixtime=" + unixtime + ", updatetime=" + updatetime+"]";
             }

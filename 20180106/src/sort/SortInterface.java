@@ -1,5 +1,5 @@
 package sort;
 
-public interface SortInterface {
-       Boolean sort(Object obj);
+public interface SortInterface<T> {
+       Boolean sort(T obj);
 }

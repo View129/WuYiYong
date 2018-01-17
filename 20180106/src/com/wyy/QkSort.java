@@ -7,11 +7,11 @@ import java.util.Comparator;
  */
 public class QkSort {
 
-    public static void qkSrot(Object[] a, int s, int e, Comparator comparator) {  //快速排序算法
+    public static <T1> void qkSrot(T1[] a, int s, int e, Comparator<T1> comparator) {  //快速排序算法
         int start = s;        //左指针
         int end = e;          //右指针
-        Object mark = a[s];     //确定快速排序的中间值 key
-        Object temp;            // 数据两两交换的临时变量
+        T1 mark = a[s];     //确定快速排序的中间值 key
+        T1 temp;            // 数据两两交换的临时变量
 
         while (start < end) {
             while (start < end && (comparator.compare(a[end], mark) == 1 || comparator.compare(a[end], mark) == 0)) //调用重写的sort方法判断大小
@@ -44,11 +44,11 @@ public class QkSort {
     /**
      * 归并排序
      */
-    public static void mergeSort(Object[] data,Comparator comparator) {
+    public static <T1> void mergeSort(T1[] data,Comparator<T1> comparator) {
         sort(data, 0, data.length - 1, comparator);
     }
 
-    public static void sort(Object[] data, int left, int right,Comparator comparator) {
+    public static <T1> void sort(T1[] data, int left, int right,Comparator<T1> comparator) {
         if (left >= right)
             return;
         // 找出中间索引
@@ -62,9 +62,9 @@ public class QkSort {
         print(data);
     }
 
-    public static void merge(Object[] data, int left, int center, int right,Comparator comparator) {
+    public static <T1> void merge(T1[] data, int left, int center, int right,Comparator<T1> comparator) {
         // 临时数组
-        Object[] tmpArr = new Object[data.length];
+        T1[] tmpArr = (T1[]) new Object[data.length];
         // 右数组第一个元素索引
         int mid = center + 1;
         // third 记录临时数组的索引
@@ -89,7 +89,7 @@ public class QkSort {
         // 将临时数组中的内容拷贝回原数组中
         // （原left-right范围的内容被复制回原数组）
         while (tmp <= right) {
-            data[tmp] = tmpArr[tmp++];
+            data[tmp] =  tmpArr[tmp++];
         }
     }
 

@@ -1,12 +1,12 @@
 package com.wyy;
 
 import java.util.Comparator;
-public class StringComparator implements Comparator{
+public class StringComparator implements Comparator<String>{
     @Override
-    public int compare(Object o1, Object o2) {
-        if(((String)o1).compareTo((String) o2)>0){
+    public int compare(String o1, String o2) {
+        if(o1.compareTo(o2)>0){
             return 1;
-        }else if(((String)o1).compareTo((String) o2)==0){
+        }else if(o1.compareTo(o2)==0){
             return 0;
         }else {
             return -1;

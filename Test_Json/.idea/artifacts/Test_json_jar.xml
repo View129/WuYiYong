@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Test_json:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Test_json_jar</output-path>
+    <root id="archive" name="Test_json.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Test_Json" />
+      <element id="extracted-dir" path="E:/libs/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/libs/repository/com/alibaba/fastjson/1.2.44/fastjson-1.2.44.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/libs/repository/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/libs/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/libs/repository/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

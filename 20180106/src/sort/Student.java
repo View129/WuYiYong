@@ -2,7 +2,7 @@ package sort;
 
 import wuyiyong.People;
 
-public class Student extends People implements SortInterface {
+public class Student extends People implements SortInterface<Student> {
     private int age;
     //构造函数
     public Student(){}
@@ -20,8 +20,8 @@ public class Student extends People implements SortInterface {
 
     @Override
     //重写排序规则
-    public Boolean sort(Object obj) {
-        if(this.age>((Student)obj).getAge()){
+    public Boolean sort(Student obj) {
+        if(this.age>obj.getAge()){
             return true;
         }else {
             return false;

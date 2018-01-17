@@ -2,14 +2,14 @@ package sort;
 
 public  class QkSort {
 
-    public static void sortt(SortInterface[] a, int s, int e) {  //快速排序算法
+    public static <T extends SortInterface<T>> void sortt(T[] a, int s, int e) {  //快速排序算法
         int start = s;        //左指针
         int end = e;          //右指针
-        SortInterface mark = a[s];     //确定快速排序的中间值 key
-        SortInterface temp;            // 数据两两交换的临时变量
+        T mark = a[s];     //确定快速排序的中间值 key
+        T temp;            // 数据两两交换的临时变量
 
         while (start<end) {
-            while (start < end && a[end].sort(mark))  //调用重写的sort方法判断大小
+            while (start < end && a[end].sort( mark))  //调用重写的sort方法判断大小
                 end--;
 
             if (!a[end].sort(mark)) {  //两两交换
