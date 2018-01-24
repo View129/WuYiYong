@@ -1,6 +1,10 @@
 package sort;
 
+
 import wuyiyong.People;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Student extends People implements SortInterface<Student> {
     private int age;
