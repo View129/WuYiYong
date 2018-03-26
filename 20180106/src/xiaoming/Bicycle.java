@@ -5,4 +5,6 @@ public class Bicycle extends Traffic {
     public void toolName() {
         System.out.print("骑自行车");
     }
+
+
 }

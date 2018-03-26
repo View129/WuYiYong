@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--框架扫描的controller包-->
+    <context:component-scan base-package="com.wyy"/>
+    <context:annotation-config/>
+    <!--启动对@AspectJ注解的支持-->
+   <aop:aspectj-autoproxy/>
+    <!--注解取代xml配置 注入-->
+    <!--<bean id="role" class="com.wyy.Role"/>
+    <bean id="user" class="com.wyy.User">
+        <property name="role" ref="role"/>
+    </bean>-->
+
+    <!--aop -->
+   <!-- <bean id="log" class="com.wyy.aop.LogPrint"></bean>
+    <aop:config>
+        <aop:aspect id="myaop" ref="log">
+            <aop:pointcut id="mycut" expression="execution(* com.wyy.*.*(..)) and args(userName)"/>
+            <aop:before pointcut-ref="mycut" method="doAccessCheck"/>
+            <aop:after pointcut-ref="mycut" method="doReleaseAction"/>
+
+        </aop:aspect>
+    </aop:config>-->
+</beans>
