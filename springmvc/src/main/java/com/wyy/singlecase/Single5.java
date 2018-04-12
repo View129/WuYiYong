@@ -6,8 +6,17 @@ package com.wyy.singlecase;
  */
     public enum Single5 {
         INSTANCE;
-        public void whateverMethod() {
-        }
+    private Resource instance;
+    Single5() {
+        instance = new Resource();
+    }
+    public Resource getInstance() {
+        return instance;
+    }
+    }
+
+    class Resource {
+
     }
 
 
