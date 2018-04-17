@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
 	<title></title>
 	<script type="text/javascript" src="easyui/jquery.min.js"></script>
     <!-- 2    css资源 -->
@@ -34,11 +35,21 @@
 
     <div data-options="region:'west',title:'导航',split:true" style="width:180px;">
         <div id="aa" class="easyui-accordion" data-options="multiple:true">   
-            <div title="Title1" data-options="selected:true" style="overflow:auto;padding:10px;">   
-                content1   
+            <div title="用户管理" data-options="selected:true" style="overflow:auto;">   
+                <ul class="ul">
+                       <li data-url="login.html">系统管理员</li>
+                       <li data-url="https://www.baidu.com">月住户信息管理</li>
+                       <li>商家信息管理</li>
+                       <li>黑名单</li>
+                </ul>   
             </div>   
-            <div title="Title2" data-options="" style="padding:10px;">   
-                content2    
+            <div title="Title2" data-options=""">   
+                <ul class="ul">
+                       <li>系统管理员</li>
+                       <li>月住户信息管理</li>
+                       <li>商家信息管理</li>
+                       <li>黑名单</li>
+                </ul>    
             </div>   
             <div title="Title3" style="padding:10px;">   
                 content3    
