@@ -39,9 +39,6 @@
 <script src="/resources/login/js/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script>
 
-    var json='{"name":"zwy","age":"20"}';
-    var js = JSON.parse(json);
-    console.log(js.name+js.age);
 $('#login-button').click(function (event) {
 
 

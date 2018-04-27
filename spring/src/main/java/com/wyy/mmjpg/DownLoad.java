@@ -32,8 +32,8 @@ public class DownLoad {
         String referer = "http://img.mmjpg.com/small/2016/656_s.jpg";
         //存储位置
         String savePath = "e:\\\\java基础教程";
-        int start = 1200;
-        int end = start + 100;
+        int start = 898;
+        int end = start + 1331;
 
         for (int i = start; i <= end; i++) {
             String newsavePath = savePath+File.separator+i;
